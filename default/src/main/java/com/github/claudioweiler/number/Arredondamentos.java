@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.number;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

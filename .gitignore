@@ -1,0 +1,15 @@
+# Common ignores
+
+## Directories
+.settings/
+target/
+/src/main/jpa-metamodel/
+
+## Files
+.classpath
+.project
+.factorypath
+.flattened-pom.xml
+*.jsfdia
+
+# Project ignores

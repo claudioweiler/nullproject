@@ -21,7 +21,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package testes;
+package com.github.claudioweiler.text;
 
 import java.text.Collator;
 import java.util.Comparator;

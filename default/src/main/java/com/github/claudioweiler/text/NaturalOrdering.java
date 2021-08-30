@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.text;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class NaturalOrdering {
 
 	public static void main(String[] args) {
-		String[] versoes = { "v1.1", "v1.2.1.1", "v1.2.1.2", "v1.2.2.1", "v1.2.1.11", "v1.2.2.0", "v1.11", "v2.0", "v11.0", "img1", "img 2", "img11", "img2", "1.1", "1.2.1", "1.11", "2.0", "11.0", "1_1", "1_2_1", "1_11", "2_0", "1", "01", "2A", "2a", "2b", "2แ", "2B", "1a", "0001", "00012", null};
+		String[] versoes = { "v1.1", "v1.2.1.1", "v1.2.1.2", "v1.2.2.1", "v1.2.1.11", "v1.2.2.0", "v1.11", "v2.0", "v11.0", "img1", "img 2", "img11", "img2", "1.1", "1.2.1", "1.11", "2.0", "11.0", "1_1", "1_2_1", "1_11", "2_0", "1", "01", "2A", "2a", "2b", "2รก", "2B", "1a", "0001", "00012", null };
 
 		ArrayList<String> aOrdenar = new ArrayList<String>();
 		for(String s : versoes) {

@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.text;
 
 
 public class StringUses {

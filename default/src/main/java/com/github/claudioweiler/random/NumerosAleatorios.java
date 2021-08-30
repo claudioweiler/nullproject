@@ -1,3 +1,5 @@
+package com.github.claudioweiler.random;
+
 import java.nio.ByteBuffer;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -9,13 +11,13 @@ public class NumerosAleatorios {
 		System.currentTimeMillis();
 		Random rng;
 		byte[] array = ByteBuffer.allocate(16).putLong(System.currentTimeMillis()).putLong(Runtime.getRuntime().freeMemory()).array();
-		System.out.println(array.toString());
+		System.out.println(Arrays.toString(array));
 
 		for(int i = 0; i < 50; i++) {
 			System.out.print(Math.random() + " ");
 		}
 		System.out.print("\n");
-		// Gerando números inteiros de 15 até 24
+		// Gerando nÃºmeros inteiros de 15 atÃ© 24
 		for(int i = 0; i < 50; i++) {
 			int n = (int)(Math.random() * 10) + 15;
 			System.out.print(n + " ");

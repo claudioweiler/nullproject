@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.text;
 
 import java.util.Comparator;
 

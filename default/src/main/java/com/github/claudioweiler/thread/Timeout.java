@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.thread;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -20,20 +20,20 @@ public class Timeout {
 		try {
 			System.out.println("Iniciando chamada com timeout.");
 			String resposta = handle.get(10, TimeUnit.SECONDS);
-			System.out.println("O mÈtodo retornou: " + resposta);
+			System.out.println("O m√©todo retornou: " + resposta);
 		} catch(InterruptedException e) {
 			System.out.println("A thread principal foi interrompida.");
 		} catch(ExecutionException e) {
-			System.out.println("A execuÁ„o do mÈtodo lanÁou uma exceÁ„o.");
+			System.out.println("A execu√ß√£o do m√©todo lan√ßou uma exce√ß√£o.");
 		} catch(TimeoutException e) {
-			System.out.println("O mÈtodo estourou o tempo limite (timeout).");
+			System.out.println("O m√©todo estourou o tempo limite (timeout).");
 		}
 		
 		System.out.println("Encerrando aplicativo.");
 		System.exit(0);
 	}
 	
-	// Esta classe apenas faz a conex„o entre o nosso cÛdigo e o cÛdigo n„o controlado
+	// Esta classe apenas faz a conex√£o entre o nosso c√≥digo e o c√≥digo n√£o controlado
 	static class ClasseDeConexao implements Callable<String> {
 
 		@Override
@@ -42,10 +42,10 @@ public class Timeout {
 		}
 	}
 
-	// Esta classe È apenas um exemplo de cÛdigo n„o controlado, seria a nossa API externa.
+	// Esta classe √© apenas um exemplo de c√≥digo n√£o controlado, seria a nossa API externa.
 	static class ExecucaoNaoControlada {
 
-		// O momento de retorno deste mÈtodo n„o È conhecido, pode ocorrer em qualquer momento.
+		// O momento de retorno deste m√©todo n√£o √© conhecido, pode ocorrer em qualquer momento.
 		public String executar() throws Exception {
 			System.out.println("# Informe seu nome:");
 			return new BufferedReader(new InputStreamReader(System.in)).readLine();

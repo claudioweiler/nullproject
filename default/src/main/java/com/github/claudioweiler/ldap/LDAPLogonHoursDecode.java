@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.ldap;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;

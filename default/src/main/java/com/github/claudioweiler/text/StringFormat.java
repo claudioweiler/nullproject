@@ -1,4 +1,4 @@
-package testes;
+package com.github.claudioweiler.text;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -55,7 +55,7 @@ public class StringFormat {
 
 		System.err.println("");
 
-		MessageFormat mf = new MessageFormat("{0,choice,0#ninguém|1#uma pessoa|1<{0,number,00} pessoas} aguardando atendimento na sala de emergência");
+		MessageFormat mf = new MessageFormat("{0,choice,0#ninguÃ©m|1#uma pessoa|1<{0,number,00} pessoas} aguardando atendimento na sala de emergÃªncia");
 		for(int i = 10; i >= 0; i--) {
 			System.err.println(mf.format(new Object[]{i}));
 		}
